@@ -1,0 +1,65 @@
+<!--
+    通过swiper4.4.2隐藏微信下拉域名
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉隐藏微信域名</title>
+    <script src="../js/initSize.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css"/>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            height: auto;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background:#ddd;
+            height:2000px;
+            font-size:.4rem;
+        }
+        .test{
+            position:fixed;
+            width:100%;
+            height:100%;
+            font-size:.3rem;
+            text-align:center;
+            line-height:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="test">嘿嘿</div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">            
+            <div class="swiper-slide">
+                页面内容~~~
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            freeMode: true,
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            mousewheel: true,
+        });     
+    </script>
+</body>
+</html>
